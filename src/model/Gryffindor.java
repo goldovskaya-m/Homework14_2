@@ -17,7 +17,7 @@ public class Gryffindor extends Hogwarts {
 
     public void compareGryffindorStudents(Gryffindor student) {
         if (getPower() > student.getPower()) {
-            System.out.println(String.format("%s обладает большей мощьностью магии, чем %s",  this, student));
+            System.out.println(String.format("%s обладает большей мощьностью магии, чем %s", this, student));
         } else if (getPower() < student.getPower()) {
             System.out.println(String.format("%s обладает большей мощьностью магии, чем %s", student, this));
         } else {
@@ -72,7 +72,7 @@ public class Gryffindor extends Hogwarts {
     }
 
 
-    public String toStringtoStringFullInfo() {
+    public String toStringFullInfo() {
         return "Gryffindor{" +
                 " ,name=" + name +
                 ", transgression=" + transgression +
@@ -88,6 +88,7 @@ public class Gryffindor extends Hogwarts {
         return name;
     }
 }
+
 
 
 

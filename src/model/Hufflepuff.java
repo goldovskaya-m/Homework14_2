@@ -16,7 +16,7 @@ public class Hufflepuff extends Hogwarts {
 
     public void compareHufflepuffStudents(Hufflepuff student) {
         if (getPower() > student.getPower()) {
-            System.out.println(String.format("%s обладает большей мощьностью магии, чем %s",  this, student));
+            System.out.println(String.format("%s обладает большей мощьностью магии, чем %s", this, student));
         } else if (getPower() < student.getPower()) {
             System.out.println(String.format(" %s обладает большей мощьностью магии, чем %s", student, this));
         } else {
@@ -25,7 +25,7 @@ public class Hufflepuff extends Hogwarts {
 
     }
 
-    public int getPower () {
+    public int getPower() {
         return hardworking + loyal + honest + transgression + magicPower;
     }
 
@@ -64,7 +64,7 @@ public class Hufflepuff extends Hogwarts {
     }
 
 
-    public String toStringtoStringFullInfo() {
+    public String toStringFullInfo() {
         return "Hufflepuff{" +
                 " ,name=" + name +
                 ", transgression=" + transgression +
@@ -80,3 +80,4 @@ public class Hufflepuff extends Hogwarts {
         return name;
     }
 }
+

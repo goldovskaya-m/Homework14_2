@@ -2,15 +2,15 @@ package model;
 
 import java.util.Objects;
 
-public class Slytherin extends Hogwarts{
+public class Slytherin extends Hogwarts {
     private int conning;
     private int determination;
     private int ambition;
     private int resourcefulness;
     private int thirstForPower;
 
-    public  Slytherin(String name, int transgression,int magicPower, int conning, int determination, int ambition, int resourcefulness, int thirstForPower  ) {
-        super(name,transgression, magicPower);
+    public Slytherin(String name, int transgression, int magicPower, int conning, int determination, int ambition, int resourcefulness, int thirstForPower) {
+        super(name, transgression, magicPower);
         this.conning = conning;
         this.determination = determination;
         this.ambition = ambition;
@@ -28,9 +28,9 @@ public class Slytherin extends Hogwarts{
         }
     }
 
-        public int getPower () {
-            return conning + determination + ambition + resourcefulness + thirstForPower + transgression + magicPower;
-        }
+    public int getPower() {
+        return conning + determination + ambition + resourcefulness + thirstForPower + transgression + magicPower;
+    }
 
 
     public int getConning() {
@@ -91,7 +91,7 @@ public class Slytherin extends Hogwarts{
         return "Slytherin{" +
                 " ,name=" + name +
                 ", transgression=" + transgression +
-                ", magicPower=" + magicPower+
+                ", magicPower=" + magicPower +
                 "conning=" + conning +
                 ", determination=" + determination +
                 ", ambition=" + ambition +
@@ -99,9 +99,11 @@ public class Slytherin extends Hogwarts{
                 ", thirstForPower=" + thirstForPower +
                 '}';
     }
+
     @Override
     public String toString() {
         return name;
     }
 }
+
 

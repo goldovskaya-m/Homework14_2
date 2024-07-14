@@ -7,7 +7,7 @@ public class Hogwarts {
     protected int transgression;
     protected int magicPower;
 
-    public Hogwarts(String name, int transgression,int magicPower) {
+    public Hogwarts(String name, int transgression, int magicPower) {
         this.name = name;
         this.transgression = transgression;
         this.magicPower = magicPower;
@@ -15,7 +15,7 @@ public class Hogwarts {
 
     public static void compareHogwartsStudents(Hogwarts student, Hogwarts student2) {
         if (student.getPower() > student2.getPower()) {
-            System.out.println(String.format("%s обладает большей мощьностью магии, чем %s",  student, student2));
+            System.out.println(String.format("%s обладает большей мощьностью магии, чем %s", student, student2));
         } else if (student.getPower() < student2.getPower()) {
             System.out.println(String.format("%s обладает большей мощьностью магии, чем %s", student2, student));
         } else {
@@ -25,7 +25,7 @@ public class Hogwarts {
     }
 
     public int getPower() {
-        return  transgression + magicPower;
+        return transgression + magicPower;
     }
 
     public String getName() {
@@ -65,6 +65,14 @@ public class Hogwarts {
         return Objects.hash(name, transgression, magicPower);
     }
 
+    public String toStringFullInfo() {
+        return "Gryffindor{" +
+                " ,name=" + name +
+                ", transgression=" + transgression +
+                ", magicPower=" + magicPower +
+                '}';
+    }
+
     @Override
     public String toString() {
         return "Hogwarts{" +
@@ -74,3 +82,4 @@ public class Hogwarts {
                 '}';
     }
 }
+

@@ -2,13 +2,13 @@ package model;
 
 import java.util.Objects;
 
-public class Ravenclaw extends Hogwarts{
+public class Ravenclaw extends Hogwarts {
     private int wise;
     private int witty;
     private int creative;
 
-    public Ravenclaw(String name, int transgression,int magicPower, int wise, int witty, int creative) {
-        super(name,transgression,magicPower);
+    public Ravenclaw(String name, int transgression, int magicPower, int wise, int witty, int creative) {
+        super(name, transgression, magicPower);
         this.wise = wise;
         this.witty = witty;
         this.creative = creative;
@@ -24,7 +24,7 @@ public class Ravenclaw extends Hogwarts{
         }
     }
 
-    public int getPower () {
+    public int getPower() {
         return wise + witty + creative + transgression + magicPower;
     }
 
@@ -40,7 +40,7 @@ public class Ravenclaw extends Hogwarts{
         return witty;
     }
 
-    public  void setWitty(int witty) {
+    public void setWitty(int witty) {
         this.witty = witty;
     }
 
@@ -66,18 +66,20 @@ public class Ravenclaw extends Hogwarts{
     }
 
 
-    public String toStringtoStringFullInfo() {
+    public String toStringFullInfo() {
         return "Ravenclaw{" +
                 " ,name=" + name +
                 ", transgression=" + transgression +
-                ", magicPower=" + magicPower+
+                ", magicPower=" + magicPower +
                 "wise=" + wise +
                 ", witty=" + witty +
                 ", creative=" + creative +
                 '}';
     }
+
     @Override
     public String toString() {
         return name;
     }
 }
+

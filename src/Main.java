@@ -17,14 +17,13 @@ public class Main {
 
         Ravenclaw choChang = new Ravenclaw("Cho Chang ", 24, 15, 22, 44, 6);
         Ravenclaw padmaPatil = new Ravenclaw("Padma Patil ", 33, 4, 5, 7, 8);
-        Ravenclaw marcusBelby= new Ravenclaw("Marcus Belby", 4,45,7,5,6);
+        Ravenclaw marcusBelby = new Ravenclaw("Marcus Belby", 4, 45, 7, 5, 6);
 
-        hermioneGranger.compareGryffindorStudents( ronWeasley);
-        dracoMalfoy.compareSlytherinStudents( gregoryGoyle);
+        hermioneGranger.compareGryffindorStudents(ronWeasley);
+        dracoMalfoy.compareSlytherinStudents(gregoryGoyle);
         zachariasSmith.compareHufflepuffStudents(cedricDiggory);
-        choChang.compareRavenclawStudents( padmaPatil);
-        Hogwarts.compareHogwartsStudents(harryPotter,dracoMalfoy);
-
+        choChang.compareRavenclawStudents(padmaPatil);
+        Hogwarts.compareHogwartsStudents(harryPotter, dracoMalfoy);
 
 
     }
